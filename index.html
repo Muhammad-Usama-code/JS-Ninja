@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usama's Calculator Assignment</title>
+    <style>
+        .body {
+            height: 230px;
+            width: 180px;
+            background-color: darkgray;
+            border: 5px solid black;
+            border-radius: 15px;
+        }
+
+        button {
+            width: 50px;
+            height: 35px;
+            cursor: pointer;
+        }
+
+        .cells {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 5px;
+        }
+
+        input {
+            margin: 10px 5px;
+            height: 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Usama's Calculator</h1>
+    <div class="body">
+        <div>
+            <input id="input" type="text">
+        </div>
+        <div class="cells">
+            <button onclick='document.getElementById("input").value += "1";'>1</button>
+            <button onclick='document.getElementById("input").value += "2";'>2</button>
+            <button onclick='document.getElementById("input").value += "3";'>3</button>
+        </div>
+        <div class="cells">
+            <button onclick='document.getElementById("input").value += "4";'>4</button>
+            <button onclick='document.getElementById("input").value += "5";'>5</button>
+            <button onclick='document.getElementById("input").value += "6";'>6</button>
+        </div>
+        <div class="cells">
+            <button onclick='document.getElementById("input").value += "7";'>7</button>
+            <button onclick='document.getElementById("input").value += "8";'>8</button>
+            <button onclick='document.getElementById("input").value += "9";'>9</button>
+        </div>
+        <div class="cells">
+            <button onclick='document.getElementById("input").value += "0";'>0</button>
+            <button onclick='document.getElementById("input").value = "";'>C</button>
+            <button onclick='document.getElementById("input").value += ".";'>.</button>
+        </div>
+    </div>
+</body>
+
+</html>
